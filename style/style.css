@@ -1,10 +1,33 @@
-@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Roboto:wght@300;400;500;700&display=swap');
+/* Google font family link */
 
-/* Common css */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;500;600;700&family=Lobster&family=Poppins:wght@300;400;500;600;700&display=swap');
+
+/* using font-family 
+font-family: 'Poppins', sans-serif;
+font-family: 'Inter', sans-serif;
+font-family: 'Lobster', cursive;
+*/
+
+
+/* Common css style*/
 
 * {
     margin: 0;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Poppins', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+button {
+    font-family: 'Inter', sans-serif;
+}
+
+p {
+    font-family: 'Poppins', sans-serif;
 }
 
 img {
@@ -18,18 +41,18 @@ img {
 }
 
 .primary-btn {
-    padding: 11px 20px;
+    padding: 15px 20px;
     background: #FF5959;
     border: none;
     color: #fff;
     border-radius: 5px;
-    font-size: 18px;
+    font-size: 22px;
     margin-top: 20px;
 }
 
 .section-title {
     text-align: center;
-    font-size: 40px;
+    font-size: 50px;
     font-weight: 700;
     margin-bottom: 20px;
     color: #121212;
@@ -50,10 +73,11 @@ img {
 
 #banner {
     width: 100%;
-    background: linear-gradient(#00000076, #00000073), url("../images/banner.jpg");
+    background: linear-gradient(#60474700, #000000f0), url(../images/banner.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+    padding: 200px 0;
 }
 
 .banner-content {
@@ -61,9 +85,12 @@ img {
 }
 
 .banner-title {
-    font-size: 60px;
+    font-size: 65px;
     font-weight: 700;
     color: #fff;
+    width: 75%;
+    display: block;
+    margin: 0 auto;
 }
 
 .banner-description {
@@ -71,8 +98,9 @@ img {
     line-height: 1.3em;
     color: #fff;
     width: 50%;
+    font-weight: 400;
     display: block;
-    margin: 0 auto;
+    margin: 25px auto 20px auto;
 }
 
 
@@ -92,8 +120,12 @@ img {
     display: flex;
     align-items: center;
     justify-content: space-around;
-    /* width: 80%; */
     padding: 36px 20%;
+}
+
+div.amount-content:nth-child(2) {
+    background: #FFEEEE;
+    border: 2px solid #FF5959
 }
 
 .amount-content {
@@ -102,7 +134,7 @@ img {
     border-radius: 10px;
 }
 
-.amount-content p {
+.amount-content h4 {
     color: #707070;
     font-size: 25px;
     font-weight: 700;
@@ -124,17 +156,8 @@ img {
     border: 1px solid #DADADA;
 }
 
-div.amount-content:nth-child(2) {
-    background: #FFEEEE;
-    border: 2px solid #FF5959
-}
-
 
 /* Donate Plan section style */
-
-#donate-plan {}
-
-.donate-plan-content {}
 
 .donate-plan-box {
     display: flex;
@@ -146,7 +169,7 @@ div.amount-content:nth-child(2) {
 
 .donate-plan-item {
     background: #EDF5F6;
-    padding: 45px 25px;
+    padding: 60px 25px;
     border-radius: 5px;
 }
 
@@ -160,8 +183,9 @@ div.amount-content:nth-child(2) {
 
 .donate-plan-title {
     margin: 15px 0;
-    font-size: 20px;
+    font-size: 24px;
     color: #121212;
+    font-family: 'Poppins', sans-serif;
 }
 
 .donate-plan-description {
@@ -172,7 +196,7 @@ div.amount-content:nth-child(2) {
 }
 
 
-/* need donation */
+/* need donation section style */
 
 #need-donation {
     margin: 100px 0;
@@ -180,6 +204,7 @@ div.amount-content:nth-child(2) {
 
 .need-donation-item {
     display: flex;
+    align-items: center;
     gap: 80px;
     margin-top: 80px;
 }
@@ -203,7 +228,7 @@ div.amount-content:nth-child(2) {
 }
 
 
-/* Updates */
+/* Updates section style */
 
 #updates {
     margin: 100px 0;
@@ -213,7 +238,7 @@ div.amount-content:nth-child(2) {
     background: #FFF4D6;
     margin: 0px 14%;
     text-align: center;
-    padding: 52px 0;
+    padding: 70px 0;
     margin-top: 50px;
 }
 
@@ -237,7 +262,7 @@ input[type="submit"] {
 }
 
 
-/* Footer */
+/* Footer style*/
 
 #footer {
     padding: 60px;
