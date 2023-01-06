@@ -1,0 +1,193 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+
+/* Common css */
+
+* {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+img {
+    max-width: 100%;
+}
+
+.container {
+    max-width: 1140px;
+    margin: 0 auto;
+    display: block;
+}
+
+.primary-btn {
+    padding: 11px 20px;
+    background: #FF5959;
+    border: none;
+    color: #fff;
+    border-radius: 5px;
+    font-size: 18px;
+    margin-top: 20px;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 40px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: #121212;
+}
+
+.section-description {
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 1.4em;
+    color: #707070;
+    text-align: center;
+    width: 50%;
+    margin: 0 auto;
+}
+
+
+/* banner section style */
+
+#banner {
+    width: 100%;
+    background: url("../images/banner.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.banner-content {}
+
+.banner-title {}
+
+.banner-description {}
+
+
+/* donate today section style */
+
+#donate-today {
+    margin: 100px 0;
+}
+
+.donate-today-content {
+    text-align: center;
+    display: block;
+    margin: 0 auto;
+}
+
+.donate-amount {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    /* width: 80%; */
+    padding: 36px 20%;
+}
+
+.amount-content {
+    padding: 28px 20px;
+    background: #FAFAFA;
+    border-radius: 10px;
+}
+
+.amount-content p {
+    color: #707070;
+    font-size: 25px;
+    font-weight: 700;
+}
+
+.other-amount {
+    text-align: center;
+    padding: 0 20%;
+}
+
+.other-amount p {
+    color: #B3B3B3;
+    font-size: 17px;
+    font-weight: 400;
+    padding-bottom: 11px;
+}
+
+.other-amount hr {
+    border: 1px solid #DADADA;
+}
+
+div.amount-content:nth-child(2) {
+    background: #FFEEEE;
+    border: 2px solid #FF5959
+}
+
+
+/* Donate Plan section style */
+
+#donate-plan {}
+
+.donate-plan-content {}
+
+.donate-plan-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+    margin: 50px 0;
+}
+
+.donate-plan-item {
+    background: #EDF5F6;
+    padding: 45px 25px;
+    border-radius: 5px;
+}
+
+.donate-plan-item:nth-child(2) {
+    background: #FFEEEF;
+}
+
+.donate-plan-item:nth-child(3) {
+    background: #FFF4D6;
+}
+
+.donate-plan-title {
+    margin: 15px 0;
+    font-size: 20px;
+    color: #121212;
+}
+
+.donate-plan-description {
+    font-size: 16px;
+    font-weight: 400;
+    color: #707070;
+    line-height: 1.3em;
+}
+
+
+/* need donation */
+
+#need-donation {
+    margin: 100px 0;
+}
+
+.need-donation-item {
+    display: flex;
+    gap: 80px;
+    margin-top: 80px;
+}
+
+.donation {
+    width: 50%;
+}
+
+.donation>.section-title {
+    text-align: left;
+}
+
+.donation>.section-description {
+    width: 100%;
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.donation-image {
+    width: 100%;
+}
