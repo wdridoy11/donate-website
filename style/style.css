@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Roboto:wght@300;400;500;700&display=swap');
 
 /* Common css */
 
@@ -50,20 +50,30 @@ img {
 
 #banner {
     width: 100%;
-    background: url("../images/banner.jpg");
+    background: linear-gradient(#00000076, #00000073), url("../images/banner.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
 
-.banner-content {}
+.banner-content {
+    text-align: center;
+}
 
-.banner-title {}
+.banner-title {
+    font-size: 60px;
+    font-weight: 700;
+    color: #fff;
+}
 
-.banner-description {}
+.banner-description {
+    font-size: 18px;
+    line-height: 1.3em;
+    color: #fff;
+    width: 50%;
+    display: block;
+    margin: 0 auto;
+}
 
 
 /* donate today section style */
@@ -190,4 +200,61 @@ div.amount-content:nth-child(2) {
 
 .donation-image {
     width: 100%;
+}
+
+
+/* Updates */
+
+#updates {
+    margin: 100px 0;
+}
+
+.subscribe {
+    background: #FFF4D6;
+    margin: 0px 14%;
+    text-align: center;
+    padding: 52px 0;
+    margin-top: 50px;
+}
+
+input[type="email"] {
+    padding: 15px 20px;
+    width: 40%;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px 0 0 5px;
+    background: #D9D9D9;
+}
+
+input[type="submit"] {
+    padding: 15px 40px;
+    font-size: 18px;
+    border: none;
+    border-radius: 0 5px 5px 0;
+    background: #FF5959;
+    color: #fff;
+    margin-left: -11px;
+}
+
+
+/* Footer */
+
+#footer {
+    padding: 60px;
+    background: #0B0D17;
+}
+
+.footer-content {
+    text-align: center;
+}
+
+.footer-content>.section-title {
+    color: #FF5959;
+    font-family: 'Lobster', cursive;
+    font-weight: 400;
+}
+
+.footer-content p {
+    color: #fff;
+    font-size: 16px;
 }
