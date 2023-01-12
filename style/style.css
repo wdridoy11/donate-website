@@ -297,8 +297,14 @@ input[type="submit"] {
 
 @media screen and (max-width:992px) {
     .donate-plan-box {
-        flex-direction: column;
+        flex-direction: row;
+        align-items: flex-start;
+        flex-wrap: wrap;
         padding: 20px;
+    }
+
+    .donate-plan-item {
+        width: 47%;
     }
 }
 
@@ -369,5 +375,15 @@ input[type="submit"] {
     .amount-content {
         padding: 28px 30%;
         margin: 10px;
+    }
+
+    /* Donate Plan area style */
+    .donate-plan-box {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .donate-plan-item {
+        width: 100%;
     }
 }
