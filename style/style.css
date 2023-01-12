@@ -13,6 +13,8 @@ font-family: 'Lobster', cursive;
 
 * {
     margin: 0;
+    padding: 0;
+    box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
 
@@ -119,6 +121,7 @@ img {
 .donate-amount {
     display: flex;
     align-items: center;
+    flex-direction: row;
     justify-content: space-around;
     padding: 36px 20%;
 }
@@ -162,6 +165,7 @@ div.amount-content:nth-child(2) {
 .donate-plan-box {
     display: flex;
     align-items: center;
+    flex-direction: row;
     justify-content: space-between;
     gap: 30px;
     margin: 50px 0;
@@ -205,6 +209,7 @@ div.amount-content:nth-child(2) {
 .need-donation-item {
     display: flex;
     align-items: center;
+    flex-direction: row;
     gap: 80px;
     margin-top: 80px;
 }
@@ -282,4 +287,87 @@ input[type="submit"] {
 .footer-content p {
     color: #fff;
     font-size: 16px;
+}
+
+.hide {
+    display: none;
+}
+
+/* responsive style */
+
+@media screen and (max-width:992px) {
+    .donate-plan-box {
+        flex-direction: column;
+        padding: 20px;
+    }
+}
+
+@media screen and (max-width:768px) {
+
+    /* Donate Today area responsive */
+    .need-donation-item {
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .need-donation-item-one {
+        flex-direction: column-reverse;
+    }
+
+    .donation {
+        width: 100%;
+    }
+
+    .donation-content {
+        padding: 20px;
+    }
+
+    /* Updates area responsive  */
+    .subscribe {
+        margin: 50px 3% 0 3%;
+    }
+
+    .subscribe {
+        text-align: left;
+        padding: 70px 2%;
+    }
+
+    input[type="email"] {
+        width: 98%;
+        border-radius: 5px;
+    }
+
+    input[type="submit"] {
+        border-radius: 5px;
+        margin: 10px 0 0 0;
+    }
+}
+
+
+@media screen and (max-width: 635px) {
+
+    /* banner area responsive */
+    .banner-title,
+    .banner-description {
+        width: 100%;
+        padding: 0 20px;
+    }
+
+    .donate-today-content>.section-description,
+    .donate-plan-content>.section-description,
+    .updates-content>.section-description {
+        width: 100%;
+        padding: 0 20px;
+    }
+
+    /* Donate Today area responsive*/
+    .donate-amount {
+        flex-direction: column;
+        padding: 36px 0;
+    }
+
+    .amount-content {
+        padding: 28px 30%;
+        margin: 10px;
+    }
 }
